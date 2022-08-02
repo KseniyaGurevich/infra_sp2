@@ -54,7 +54,7 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 - Заполните базу данными:
 ```
-python manage.py loaddata fixtures.json
+docker-compose exec web python manage.py loaddata fixtures.json
 ```
 - Теперь проект доступен по адресам:
 <br> [http://localhost/](http://localhost/)
